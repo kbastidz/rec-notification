@@ -80,7 +80,7 @@ public class NotificationController {
         }
     }
 
-    @PostMapping("/push")
+    /*@PostMapping("/push")
     public ResponseEntity<NotificationResponse> sendPushNotification(@Valid @RequestBody PushNotificationRequest request) {
         try {
             CompletableFuture<NotificationResponse> future = pushNotificationService.sendPushNotification(request);
@@ -118,7 +118,7 @@ public class NotificationController {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
                     .body("Error unregistering FCM tokens: " + e.getMessage());
         }
-    }
+    }*/
 
     @GetMapping("/history/{recipient}")
     public ResponseEntity<List<NotificationResponse>> getNotificationHistory(@PathVariable String recipient) {
