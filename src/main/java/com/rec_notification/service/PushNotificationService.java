@@ -21,7 +21,7 @@ import com.google.firebase.messaging.*;
 @Service
 @Slf4j
 public class PushNotificationService {
-
+/*
     private final FirebaseMessaging firebaseMessaging;
     private final FcmTokenRepository fcmTokenRepository;
     private final NotificationRepository notificationRepository;
@@ -146,4 +146,6 @@ public class PushNotificationService {
                 .errorMessage(notification.getErrorMessage())
                 .build();
     }
+
+ */
 }
