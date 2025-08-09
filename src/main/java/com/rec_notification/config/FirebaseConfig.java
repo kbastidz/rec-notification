@@ -24,7 +24,7 @@ public class FirebaseConfig {
     @Value("${firebase.config-path:firebase-service-account.json}")
     private String firebaseConfigPath;
 
-    @Bean
+    /*@Bean
     public FirebaseMessaging firebaseMessaging() throws IOException {
         log.info("Initializing Firebase with config file: {}", firebaseConfigPath);
 
@@ -114,5 +114,5 @@ public class FirebaseConfig {
         executor.setRejectedExecutionHandler(new ThreadPoolExecutor.CallerRunsPolicy());
         executor.initialize();
         return executor;
-    }
+    }*/
 }
